@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <title>Flex Platform Update, April 2026</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+    :root { color-scheme: light dark; supported-color-schemes: light dark; }
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; }
+    img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; display:block; }
+    body { margin: 0 !important; padding: 0 !important; background-color: #22201d; font-family: 'Inter', Helvetica, Arial, sans-serif; }
+    a { color: #ec5f30; }
+
+    /* === Dark mode: Apple Mail, iOS Mail, most webmail === */
+    @media (prefers-color-scheme: dark) {
+      .dm-light-bg { background-color: #2c2a26 !important; }
+      .dm-stone-bg { background-color: #3a3a3a !important; }
+      .dm-dark-text { color: #FFFFFF !important; }
+      .dm-dark-text strong { color: #FFFFFF !important; }
+      .dm-border-dark { border-top-color: #2a2a2a !important; }
+    }
+    /* === Dark mode: Outlook.com / Office 365 webmail === */
+    [data-ogsc] .dm-light-bg { background-color: #2c2a26 !important; }
+    [data-ogsc] .dm-stone-bg { background-color: #3a3a3a !important; }
+    [data-ogsc] .dm-dark-text { color: #FFFFFF !important; }
+    [data-ogsc] .dm-dark-text strong { color: #FFFFFF !important; }
+    [data-ogsb] .dm-light-bg { background-color: #2c2a26 !important; }
+    [data-ogsb] .dm-stone-bg { background-color: #3a3a3a !important; }
+  </style>
+</head>
+<body>
+
+<!-- Preview text -->
+<div style="display:none;font-size:1px;color:#22201d;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">
+  New on Flex: richer energy charts, battery state of charge, and financial reporting are now live on your dashboard.
+</div>
+
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#22201d;">
+  <tr>
+    <td align="center" style="padding: 0;">
+
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" style="max-width:600px;">
+
+        <!-- ══════════════════════════════════ -->
+        <!-- HEADER: Blackcurrent logo on egg -->
+        <!-- ══════════════════════════════════ -->
+        <tr>
+          <td style="background-color:#fffaef; padding: 0;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td style="padding: 36px 40px 32px 40px;">
+                  <img src="https://paddyurlich.github.io/flex_comms_april_2026/bc-logo-rust.svg" width="240" alt="Blackcurrent" style="display:block; width:240px; height:auto;" />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Barn red divider -->
+        <tr>
+          <td style="background-color:#ec5f30; height:4px; font-size:0; line-height:0;">&nbsp;</td>
+        </tr>
+
+        <!-- ══════════════════════════════════ -->
+        <!-- HERO                               -->
+        <!-- ══════════════════════════════════ -->
+        <tr>
+          <td style="padding:0;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td width="8" style="background-color:#ec5f30; font-size:0; line-height:0;">&nbsp;</td>
+                <td style="background-color:#22201d; padding: 48px 32px 48px 32px;">
+                  <p style="margin:0 0 16px 0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:13px; font-weight:700; color:#ec5f30; letter-spacing:0.08em; text-transform:uppercase;">Flex Platform &nbsp;·&nbsp; April 2026</p>
+                  <h1 style="margin:0 0 20px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:36px; font-weight:800; color:#FFFFFF; line-height:1.0; letter-spacing:-0.01em;">New features live on<br>your Energy Dashboard.</h1>
+                  <p style="margin:0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:15px; font-weight:500; color:#a2a09e; line-height:1.6;">
+                    We've upgraded the Energy Dashboard with deeper chart visibility, battery charge tracking, and financial reporting, giving you a clearer picture of how your system is performing and what it's worth.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Stone grey divider band -->
+        <tr>
+          <td class="dm-stone-bg" style="background-color:#a2a09e; height:8px; font-size:0; line-height:0;">&nbsp;</td>
+        </tr>
+
+        <!-- Section spacer -->
+        <tr>
+          <td style="background-color:#22201d; height:48px; font-size:0; line-height:0;">&nbsp;</td>
+        </tr>
+
+        <!-- ══════════════════════════════════ -->
+        <!-- Section 01 header band             -->
+        <!-- ══════════════════════════════════ -->
+        <tr>
+          <td style="background-color:#22201d; padding:0;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td width="8" style="background-color:#ec5f30; font-size:0; line-height:0;">&nbsp;</td>
+                <td style="padding: 28px 32px;">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td valign="middle" width="80">
+                        <span style="font-family:'IBM Plex Mono','Courier New',monospace; font-size:44px; font-weight:500; color:#ec5f30; line-height:1; letter-spacing:-0.02em;">01</span>
+                      </td>
+                      <td width="20" style="font-size:0; line-height:0;">&nbsp;</td>
+                      <td width="2" style="background-color:#a2a09e; font-size:0; line-height:0;">&nbsp;</td>
+                      <td valign="middle" style="padding-left:20px;">
+                        <p style="margin:0 0 4px 0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:13px; font-weight:700; color:#ec5f30; letter-spacing:0.1em; text-transform:uppercase;">Energy Dashboard Update</p>
+                        <p style="margin:0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:17px; font-weight:700; color:#FFFFFF; line-height:1.25; letter-spacing:-0.01em;">Power charts: all six measures plus battery state of charge</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="dm-light-bg" style="background-color:#fffaef; padding: 36px 32px 0 32px;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <p class="dm-dark-text" style="margin:0 0 20px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:15px; font-weight:500; color:#22201d; line-height:1.65;">
+                    The power chart on your Energy Dashboard now shows everything at a glance: what you’re pulling from the grid, sending back, generating yourself, and using on-site, along with energy flowing <strong style="font-weight:700;">in and out of your battery</strong>. A second line shows <strong style="font-weight:700;">how full your battery is</strong> at any point in the day.
+                  </p>
+                  <p class="dm-dark-text" style="margin:0 0 28px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:15px; font-weight:500; color:#22201d; line-height:1.65;">
+                    This gives you the full operational picture in one place: how energy is flowing through your system and how your battery is responding.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Power chart image: full bleed -->
+        <tr>
+          <td class="dm-light-bg" style="background-color:#fffaef; padding: 0 32px 40px 32px;">
+            <img src="https://paddyurlich.github.io/flex_comms_april_2026/Screenshot%20Power%20Graph.png" alt="Flex Energy Dashboard power chart showing all six measures and battery state of charge" width="600" style="display:block; width:100%;" />
+          </td>
+        </tr>
+
+        <!-- Section spacer -->
+        <tr>
+          <td style="background-color:#22201d; height:48px; font-size:0; line-height:0;">&nbsp;</td>
+        </tr>
+        <!-- Section 02 header band -->
+        <tr>
+          <td style="background-color:#22201d; padding:0;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td width="8" style="background-color:#ec5f30; font-size:0; line-height:0;">&nbsp;</td>
+                <td style="padding: 28px 32px;">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td valign="middle" width="80">
+                        <span style="font-family:'IBM Plex Mono','Courier New',monospace; font-size:44px; font-weight:500; color:#ec5f30; line-height:1; letter-spacing:-0.02em;">02</span>
+                      </td>
+                      <td width="20" style="font-size:0; line-height:0;">&nbsp;</td>
+                      <td width="2" style="background-color:#a2a09e; font-size:0; line-height:0;">&nbsp;</td>
+                      <td valign="middle" style="padding-left:20px;">
+                        <p style="margin:0 0 4px 0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:13px; font-weight:700; color:#ec5f30; letter-spacing:0.1em; text-transform:uppercase;">Energy Dashboard Update</p>
+                        <p style="margin:0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:17px; font-weight:700; color:#FFFFFF; line-height:1.25; letter-spacing:-0.01em;">Daily and longer-period energy views</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="dm-stone-bg" style="background-color:#a2a09e; padding: 36px 32px 0 32px;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <p class="dm-dark-text" style="margin:0 0 28px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:15px; font-weight:500; color:#22201d; line-height:1.65;">
+                    Select a time period greater than a single day and the chart automatically switches to display <strong style="font-weight:700; color:#22201d;">Energy (kWh)</strong> rather than instantaneous power. Compare day-by-day performance across a week or month, tracking generation totals, identifying patterns and understanding how your system performs over time.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Energy chart image: full bleed -->
+        <tr>
+          <td class="dm-stone-bg" style="background-color:#a2a09e; padding: 0 32px 40px 32px;">
+            <img src="https://paddyurlich.github.io/flex_comms_april_2026/Screenshot%20Energy%20Graph.png" alt="Flex Energy Dashboard showing daily energy kWh bar chart across April 2026" width="600" style="display:block; width:100%;" />
+          </td>
+        </tr>
+
+        <!-- Section spacer -->
+        <tr>
+          <td style="background-color:#22201d; height:48px; font-size:0; line-height:0;">&nbsp;</td>
+        </tr>
+        <!-- Section 03 header band -->
+        <tr>
+          <td style="background-color:#22201d; padding:0;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td width="8" style="background-color:#ec5f30; font-size:0; line-height:0;">&nbsp;</td>
+                <td style="padding: 28px 32px;">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td valign="middle" width="80">
+                        <span style="font-family:'IBM Plex Mono','Courier New',monospace; font-size:44px; font-weight:500; color:#ec5f30; line-height:1; letter-spacing:-0.02em;">03</span>
+                      </td>
+                      <td width="20" style="font-size:0; line-height:0;">&nbsp;</td>
+                      <td width="2" style="background-color:#a2a09e; font-size:0; line-height:0;">&nbsp;</td>
+                      <td valign="middle" style="padding-left:20px;">
+                        <p style="margin:0 0 4px 0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:13px; font-weight:700; color:#ec5f30; letter-spacing:0.1em; text-transform:uppercase;">New Feature</p>
+                        <p style="margin:0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:17px; font-weight:700; color:#FFFFFF; line-height:1.25; letter-spacing:-0.01em;">Energy financial reporting: cost and revenue in dollar terms</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="dm-light-bg" style="background-color:#fffaef; padding: 36px 32px 0 32px;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <p class="dm-dark-text" style="margin:0 0 24px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:15px; font-weight:500; color:#22201d; line-height:1.65;">
+                    Flex now supports <strong style="font-weight:700;">Energy Financial Reporting</strong>. Once a tariff is assigned to your site, the platform automatically calculates and displays two key financial metrics for any selected period.
+                  </p>
+
+                  <!-- Two metric callouts: black cards on white -->
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:24px;">
+                    <tr>
+                      <td width="49%" style="background-color:#22201d; padding:22px 20px; vertical-align:top;">
+                        <p style="margin:0 0 8px 0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:13px; font-weight:700; color:#ec5f30; letter-spacing:0.1em; text-transform:uppercase;">Import Cost</p>
+                        <p style="margin:0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:13px; font-weight:400; color:#a2a09e; line-height:1.5;">Your grid import volume calculated against your configured tariff rate.</p>
+                      </td>
+                      <td width="2%" style="font-size:0;">&nbsp;</td>
+                      <td width="49%" style="background-color:#22201d; padding:22px 20px; vertical-align:top;">
+                        <p style="margin:0 0 8px 0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:13px; font-weight:700; color:#ec5f30; letter-spacing:0.1em; text-transform:uppercase;">Export Revenue</p>
+                        <p style="margin:0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:13px; font-weight:400; color:#a2a09e; line-height:1.5;">Revenue from energy exported to the grid, tracked against your export rate.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Financial metrics row: brand accents on black cards -->
+        <tr>
+          <td class="dm-light-bg" style="background-color:#fffaef; padding: 0 32px 24px 32px;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <!-- Card 1: Import Cost -->
+                <td width="32%" style="background-color:#22201d; padding: 18px 20px; vertical-align:middle;">
+                  <p style="margin:0 0 8px 0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:10px; font-weight:500; color:#a2a09e; letter-spacing:0.08em; text-transform:uppercase;">Import Cost</p>
+                  <p style="margin:0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:22px; font-weight:800; color:#FFFFFF; line-height:1; letter-spacing:-0.02em;">$1,094.34</p>
+                </td>
+                <td width="2%" style="font-size:0;">&nbsp;</td>
+                <!-- Card 2: Export Revenue (Hay Yellow highlight) -->
+                <td width="32%" style="background-color:#22201d; padding: 18px 20px; vertical-align:middle;">
+                  <p style="margin:0 0 8px 0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:10px; font-weight:500; color:#a2a09e; letter-spacing:0.08em; text-transform:uppercase;">Export Revenue</p>
+                  <p style="margin:0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:22px; font-weight:800; color:#5597d1; line-height:1; letter-spacing:-0.02em;">$77.78</p>
+                </td>
+                <td width="2%" style="font-size:0;">&nbsp;</td>
+                <!-- Card 3: Fixed Cost -->
+                <td width="32%" style="background-color:#22201d; padding: 18px 20px; vertical-align:middle;">
+                  <p style="margin:0 0 8px 0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:10px; font-weight:500; color:#a2a09e; letter-spacing:0.08em; text-transform:uppercase;">Fixed Cost</p>
+                  <p style="margin:0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:22px; font-weight:800; color:#FFFFFF; line-height:1; letter-spacing:-0.02em;">$33.00</p>
+                </td>
+              </tr>
+              <!-- Footnote -->
+              <tr>
+                <td colspan="5" style="padding: 10px 0 0 0; text-align:right;">
+                  <p style="margin:0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:10px; font-weight:400; color:#6b6b6b;">*Estimated values based on configured tariff.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Section spacer -->
+        <tr>
+          <td style="background-color:#22201d; height:48px; font-size:0; line-height:0;">&nbsp;</td>
+        </tr>
+
+        <!-- Barn red rule -->
+        <tr>
+          <td style="background-color:#ec5f30; height:4px; font-size:0; line-height:0;">&nbsp;</td>
+        </tr>
+
+        <!-- ══════════════════════════════════ -->
+        <!-- CTA BLOCK                          -->
+        <!-- ══════════════════════════════════ -->
+        <tr>
+          <td style="background-color:#22201d; padding: 0;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td width="8" style="background-color:#ec5f30; font-size:0; line-height:0;">&nbsp;</td>
+                <td style="padding: 44px 32px;">
+                  <h3 style="margin:0 0 14px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:22px; font-weight:800; color:#FFFFFF; line-height:1.2; letter-spacing:-0.015em;">These features are live on your dashboard now.</h3>
+                  <p style="margin:0 0 28px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:15px; font-weight:500; color:#a2a09e; line-height:1.6;">Log in to Flex and open your Energy Dashboard to explore the new charts and financial reporting.</p>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td style="background-color:#ec5f30;">
+                        <a href="https://app.blackcurrent.io/" style="display:inline-block; background-color:#ec5f30; color:#FFFFFF; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:13px; font-weight:700; text-decoration:none; padding:16px 30px; letter-spacing:0.08em; text-transform:uppercase;">Open Flex Dashboard →</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ══════════════════════════════════ -->
+        <!-- SIGN OFF                           -->
+        <!-- ══════════════════════════════════ -->
+        <tr>
+          <td style="background-color:#22201d; padding: 32px 32px 0 32px;">
+            <p style="margin:0 0 12px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:15px; font-weight:500; color:#a2a09e; line-height:1.65;">
+              We'll continue rolling out improvements to the Flex platform over the coming months. If you have questions about these updates or want to get more from your system, we're here to help.
+            </p>
+            <p style="margin:20px 0 0 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:15px; font-weight:700; color:#FFFFFF; line-height:1.5;">
+              The Blackcurrent team
+            </p>
+          </td>
+        </tr>
+
+        <!-- ══════════════════════════════════ -->
+        <!-- FOOTER                             -->
+        <!-- ══════════════════════════════════ -->
+        <tr>
+          <td style="background-color:#22201d; padding: 28px 32px 40px 32px;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top: 1px solid #3a3a3a;">
+              <tr>
+                <td style="padding-top:22px;">
+                  <p style="margin:0 0 6px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:13px; font-weight:400; color:#a2a09e; line-height:1.6;">
+                    Questions? <a href="mailto:support@blackcurrent.io" style="color:#ec5f30; text-decoration:none; font-weight:700;">support@blackcurrent.io</a>
+                  </p>
+                  <p style="margin:0; font-family:'IBM Plex Mono','Courier New',monospace; font-size:11px; font-weight:400; color:#6b6b6b; line-height:1.6;">
+                    &copy; 2026 Blackcurrent.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
